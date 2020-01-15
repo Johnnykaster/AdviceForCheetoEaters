@@ -3,7 +3,7 @@ $(".inputButton").click(function() {
     let dayNumVar = $(".dayNum").val();
     let feeling = $(".feelingInput").val();
     let totalCheetos = dailyCheetos * dayNumVar;
-    
+    console.log("test")
     if(totalCheetos > 20000) {
         if(feeling === "yes") {
             $(".output").text("Jeez! Your gonna end up eating " + totalCheetos + " cheetos! You might wanna slow down. At least you feel good about it I guess... Just be careful, drink lots of water...");
@@ -12,7 +12,7 @@ $(".inputButton").click(function() {
         }
     } if(totalCheetos > 2000) {
         if(feeling === "yes") {
-            $(".output").text("Nice! " + totalCheetos + " cheetos? Thats impressive. An you got confidence too. I mean if you vibe with it then keep it up man, just dont get carried away...");
+            $(".output").text("Nice! " + totalCheetos + " cheetos? Thats impressive. And you got confidence too. I mean if you vibe with it then keep it up man, just dont get carried away...");
         } else {
             $(".output").text("Hey! " + totalCheetos + " cheetos is a perfectly reasonable amount to eat within " + dayNumVar + " days. You shouldnt feel bad about it. Now go eat those cheetos with confidence and know that im cheering you on. Go get em champ...");
         }
